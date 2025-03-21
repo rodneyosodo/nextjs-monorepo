@@ -153,7 +153,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <VersionSwitcher
           versions={data.versions}
-          defaultVersion={data.versions[0]}
+          defaultVersion={data.versions[0] as string}
         />
         <SearchForm />
       </SidebarHeader>
